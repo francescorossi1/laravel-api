@@ -1,12 +1,18 @@
 <template>
-    <div class="container text-center pt-5">
-        <h1 class="text-muted display-1">In arrivo...</h1>
-    </div>
+    <AppHeader :title="title" />
 </template>
 
 <script>
+import AppHeader from './AppHeader.vue'
 export default {
+  components: { AppHeader },
     name: 'App',
+    data(){
+        return {
+            title: 'Laravel API'
+        }
+    }
+    
 }
 </script>
 
