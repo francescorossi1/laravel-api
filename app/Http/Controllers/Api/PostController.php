@@ -38,7 +38,9 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id)->get();
+
+        return response()->json($post);
     }
 
     /**
