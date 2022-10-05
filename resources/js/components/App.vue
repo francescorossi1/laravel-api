@@ -2,16 +2,16 @@
     <div>
         <AppHeader :title="title" class="mb-4" />
         <main class="container">
-            <HomePage />
+            <router-view></router-view>
         </main>
     </div>
 </template>
 
 <script>
 import AppHeader from './AppHeader.vue'
-import HomePage from './pages/HomePage.vue'
+
 export default {
-  components: { AppHeader, HomePage },
+  components: { AppHeader },
     name: 'App',
     data(){
         return {
