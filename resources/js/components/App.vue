@@ -1,15 +1,17 @@
 <template>
     <div>
-        <AppHeader :title="title" />
-        <PostsList />
+        <AppHeader :title="title" class="mb-4" />
+        <main class="container">
+            <HomePage />
+        </main>
     </div>
 </template>
 
 <script>
 import AppHeader from './AppHeader.vue'
-import PostsList from './posts/PostsList.vue'
+import HomePage from './pages/HomePage.vue'
 export default {
-  components: { AppHeader, PostsList },
+  components: { AppHeader, HomePage },
     name: 'App',
     data(){
         return {
