@@ -7,7 +7,13 @@
         <div id="navbarNav" class="collapse navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a href="#" class="nav-link">Home</a>
+                    <router-link :to="{ name: 'home' }" class="nav-link">Home</router-link>
+                </li>
+                <li class="nav-item active">
+                    <router-link :to="{ name: 'about' }" class="nav-link">About</router-link>
+                </li>
+                <li class="nav-item active">
+                    <router-link :to="{ name: 'contacts' }" class="nav-link">Contacts</router-link>
                 </li>
             </ul>
         </div>
