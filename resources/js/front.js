@@ -8,8 +8,10 @@ window.axios = require('axios');
  */
 
 import App from './components/App.vue';
+import router from './router';
 
 const root = new Vue({
+    router,
     el: '#root',
     render: h => h(App)
 });
